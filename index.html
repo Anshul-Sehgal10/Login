@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+  <body>
+    <button onclick="askLocation()">Click here</button>
+    <script>
+      function askLocation() {
+        let location= prompt("Enter your location: ");
+        if (location == "Chandigarh" || location == "Punjab" || location == "Haryana") {
+          window.location.replace("redirect.html");
+        } else{
+          alert("Sorry you cannot go any further");
+        }
+      }
+    </script>
+  </body>
+</html>
